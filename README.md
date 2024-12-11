@@ -26,36 +26,37 @@ Este repositório fornece um ambiente Docker configurado para desenvolvimento co
 
  1. **Clone este repositório:**
 
- *git clone https://github.com/LinsmarNeto/DockerContainerLaravel11.git* 
+    *git clone https://github.com/LinsmarNeto/DockerContainerLaravel11.git* 
 
- *cd DockerContainerLaravel11*
- 
+    *cd DockerContainerLaravel11*
+
  2. **Entre na pasta ./html e crie o arquivo .env:**
 
-*cd html*
+    *cd html*
 
-*cp .env.example  .env*
+    *cp .env.example  .env*
 
  3. **Suba os containers:**
 
- *docker-compose up -d*
+    *docker-compose up -d*
 
  4. **Acesse o container e instale as dependências do projeto:**
 
-*docker-compose  exec  app  bash*
+    *docker-compose  exec  app  bash*
 
-*composer  install*
+    *composer  install*
+
  5. **Gere a key do projeto Laravel:**
 
- *php  artisan  key:generate*
+    *php  artisan  key:generate*
 
  6. **Rodar as migrations:**
 
-*php  artisan  migrate*
+    *php  artisan  migrate*
 
  7. **Acesse o projeto:**
 
- *[http://localhost:8000](http://localhost:8000)*
+    *[http://localhost:8000](http://localhost:8000)*
 
 
 Você é livre para usar, modificar e distribuir este repositório conforme suas necessidades!

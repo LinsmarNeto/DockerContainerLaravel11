@@ -35,7 +35,7 @@ services:
         restart: unless-stopped
         environment:
             MYSQL_DATABASE: ${DB_DATABASE:-intranet}
-            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-root}
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-12346}
             MYSQL_PASSWORD: ${DB_PASSWORD:-123456}
             MYSQL_USER: ${DB_USERNAME:-dbuser}
         volumes:
